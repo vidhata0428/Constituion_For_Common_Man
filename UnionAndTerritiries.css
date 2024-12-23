@@ -1,0 +1,272 @@
+/* Root Variables for Theme Colors */
+:root {
+    --text-color: black; /* Darker text for better contrast */
+    --main-color: #A52A2A; /* Primary color */
+    --secondary-color: #f9f9f9; /* Subtle light background */
+    --accent-color: #E94E77; /* Eye-catching accent */
+    --border-color: #e0e0e0; /* Light border */
+    --heading-font: 'Playfair Display', serif; /* Elegant heading font */
+    --body-font: 'Roboto', sans-serif; /* Clean body font */
+  }
+  
+  /* General Styles */
+  body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background: url('img/background.png') no-repeat center center fixed ;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+  }
+  
+  /* Header Styles */
+  header {
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    overflow-x: normal; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of menu items */
+}
+
+nav ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+  
+  header h1 {
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #f4dede;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+  }
+  
+  /* Main Content */
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Styles */
+  section {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  section h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--main-color);
+    border-bottom: 4px solid var(--main-color);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  
+  section p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  section a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  section a:hover {
+    color: var(--main-color);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: linear-gradient(135deg, #8B0000, var(--main-color));
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Section Alternating Background */
+  section:nth-child(odd) {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Animations */
+  section {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+
+  /* Back Button Styling */
+.back-button-container {
+    text-align: left;
+    margin: 20px 0; /* Add some spacing around the button */
+  }
+  
+  .back-button-container button {
+    background-color: var(--main-color); /* Uses the main color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .back-button-container button:hover {
+    background-color: #800000; /* Darker shade of the main color on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  .back-button-container button:active {
+    background-color: #5a1f1f; /* Even darker shade on click */
+    transform: translateY(1px); /* Push effect */
+  }
+
+  .back-button-container {
+    text-align: left;
+    margin: 20px 0; /* Add some spacing around the button */
+  }
+  
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    section h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  
+    section p {
+      font-size: 1rem;
+    }
+  }
+  
